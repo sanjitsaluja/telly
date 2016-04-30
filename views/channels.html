@@ -1,0 +1,15 @@
+{{define "body"}}
+<div class="container theme-showcase" role="main">
+
+    <table class="table table-bordered table-striped">
+        <tbody>
+        {{ range .Channels }}
+        <tr onclick="document.location = '/channels/{{ .GuideNumber }}';">
+            <td>{{ .GuideNumber }} - {{ .GuideName }}</td>
+        </tr>
+        {{ end }}
+        </tbody>
+    </table>
+
+</div>
+{{end}}

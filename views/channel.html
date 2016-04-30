@@ -1,0 +1,17 @@
+{{define "body"}}
+<div class="container theme-showcase" role="main">
+    <div class="center">
+        <div class="alert alert-block alert-info" style="display:hidden">
+            <h4></h4>
+        </div>
+        <video controls id="video-player"
+               style="display:hidden"
+               src="/channels/{{ .Channel.GuideNumber }}.m3u8"
+               width="640"
+               height="360"
+               data-tune-url="/channels/{{ .Channel.GuideNumber }}/tune"
+               data-play-url="/channels/{{ .Channel.GuideNumber }}.m3u8"
+               data-status-url="/channels/{{ .Channel.GuideNumber }}/status"></video>
+    </div>
+</div>
+{{end}}
