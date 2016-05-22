@@ -1,0 +1,31 @@
+# Telly
+
+A super performance HDHomeRun transcoding server
+
+## Installation
+
+```ruby
+go get -t -d -v ./...
+go install 
+go build main/telly.go
+./telly
+```
+
+And then execute:
+
+    $ open localhost:8888
+
+## Configs
+
+You can specify following configs as ENV variables
+
+HDHOMERUN_HOST - HDHomeRun IP (Default: 10.0.1.31)
+
+FFMPEG_PATH - Path to ffmpag (Default: /usr/local/bin/ffmpeg)
+
+PORT - Port to run webserver on (Default: 8888)
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/sanjitsaluja/telly. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
